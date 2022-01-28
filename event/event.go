@@ -15,7 +15,6 @@ func Tilstander(tilstanden string)string{
 	tilstand = "[kylling rev korn mennesker ---V \\____/___________/ Ø---]"
 	return tilstanden
 }
-
 func FirstPut(item string)string  {
 	tilstand = "["
 	for i:=0; i < len(items); i++{
@@ -24,17 +23,14 @@ func FirstPut(item string)string  {
 		}
 	}
 
-	if(item == items[1]){
-		tilstand = ""+items[0]+ " spiser " +items[2]
-	}
-	if(item == items[2]){
-		tilstand = ""+items[1]+ " spiser " +items[0]
-	}
-	if(item == items[0]) {
-		items = append(items[:0])
-		tilstand += " ---V \\_hs+"+item+"_/___________/ Ø---]"
-	}else{
-		tilstand = "Error!Skriv kylling!"
+
+
+
+        if(item == items[0]) {
+                items = append(items[:0])
+                tilstand += " ---V \\_hs+"+item+"_/___________/ Ø---]"
+        }else{
+		tilstand = "Hahaha, du har skrevet feil svar på gåten. Prøv på nytt!"
 	}
 	return Tilstander(tilstand)
 
