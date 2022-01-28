@@ -5,7 +5,7 @@ import (
 	"bufio"
 	"fmt"
 
-	"github.com/bjornarnevland/RiverCrossing-/event"
+	"github.com/Sebastiannorolsen/Rivercrossing/event"
 	"os"
 
 	//"rc1-verden/event"
